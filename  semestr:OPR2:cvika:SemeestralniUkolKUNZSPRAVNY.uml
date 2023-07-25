@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/simonkunz/Documents/VŠ/4. semestr/OPR2/cvika/SemeestralniUkolKUNZSPRAVNY</OriginalElement>
+  <nodes>
+    <node x="148.00000000000006" y="534.0">com.osu.semeestralniukolkunz.utility.AuthorIBookFilter</node>
+    <node x="701.4021739130435" y="247.0">com.osu.semeestralniukolkunz.model.BookManager</node>
+    <node x="585.0" y="509.0">com.osu.semeestralniukolkunz.view.BookListView</node>
+    <node x="27.5" y="692.0">com.osu.semeestralniukolkunz.utility.IBookFormatter</node>
+    <node x="374.0" y="534.0">com.osu.semeestralniukolkunz.utility.TitleIBookFilter</node>
+    <node x="294.7065217391305" y="320.5">com.osu.semeestralniukolkunz.utility.IBookFilter</node>
+    <node x="117.0" y="805.0">com.osu.semeestralniukolkunz.view.BookListCell</node>
+    <node x="-126.0" y="805.0">com.osu.semeestralniukolkunz.utility.SimpleIBookFormatter</node>
+    <node x="635.3152173913045" y="-14.0">com.osu.semeestralniukolkunz.model.Book</node>
+    <node x="1001.4021739130435" y="296.0">com.osu.semeestralniukolkunz.model.CSVFileStorage</node>
+    <node x="888.5652173913045" y="510.0">com.osu.semeestralniukolkunz.controller.GUIHandler</node>
+    <node x="-126.0" y="534.0">com.osu.semeestralniukolkunz.utility.PublicationYearIBookFilter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.osu.semeestralniukolkunz.utility.AuthorIBookFilter" target="com.osu.semeestralniukolkunz.utility.IBookFilter" relationship="REALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="251.00000000000006" y="488.0" />
+      <point x="257.9565217391305" y="488.0" />
+      <point x="257.9565217391305" y="478.0" />
+      <point x="337.7065217391305" y="478.0" />
+      <point x="-43.0" y="31.5" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.view.BookListView" target="com.osu.semeestralniukolkunz.model.Book" relationship="TO_MANY">
+      <point x="-35.0" y="-69.0" />
+      <point x="665.5" y="339.0" />
+      <point x="685.0" y="339.0" />
+      <point x="685.0" y="229.5" />
+      <point x="733.315" y="229.5" />
+      <point x="-2.1739130443165777E-4" y="104.5" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.view.BookListView" target="com.osu.semeestralniukolkunz.utility.IBookFilter" relationship="TO_ONE">
+      <point x="-82.68478260869551" y="-69.0" />
+      <point x="617.8152173913045" y="354.0" />
+      <point x="86.0" y="2.0" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.model.BookManager" target="com.osu.semeestralniukolkunz.model.Book" relationship="TO_MANY">
+      <point x="-140.00017391304345" y="-0.0" />
+      <point x="685.0" y="352.0" />
+      <point x="685.0" y="229.5" />
+      <point x="733.315" y="229.5" />
+      <point x="-2.1739130443165777E-4" y="104.5" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.utility.TitleIBookFilter" target="com.osu.semeestralniukolkunz.utility.IBookFilter" relationship="REALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="469.5" y="488.0" />
+      <point x="257.9565217391305" y="488.0" />
+      <point x="257.9565217391305" y="478.0" />
+      <point x="337.7065217391305" y="478.0" />
+      <point x="-43.0" y="31.5" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.controller.GUIHandler" target="com.osu.semeestralniukolkunz.model.CSVFileStorage" relationship="TO_ONE">
+      <point x="37.33695652173901" y="-68.0" />
+      <point x="-90.5" y="56.0" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.controller.GUIHandler" target="com.osu.semeestralniukolkunz.model.BookManager" relationship="TO_ONE">
+      <point x="-2.1739130443165777E-4" y="-68.0" />
+      <point x="971.565" y="483.0" />
+      <point x="841.402" y="483.0" />
+      <point x="-1.7391304345437675E-4" y="105.0" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.view.BookListView" target="com.osu.semeestralniukolkunz.model.BookManager" relationship="TO_ONE">
+      <point x="-0.0" y="-69.0" />
+      <point x="700.5" y="483.0" />
+      <point x="841.402" y="483.0" />
+      <point x="-1.7391304345437675E-4" y="105.0" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.utility.PublicationYearIBookFilter" target="com.osu.semeestralniukolkunz.utility.IBookFilter" relationship="REALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="1.0" y="488.0" />
+      <point x="257.9565217391305" y="488.0" />
+      <point x="257.9565217391305" y="478.0" />
+      <point x="337.7065217391305" y="478.0" />
+      <point x="-43.0" y="31.5" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.view.BookListCell" target="com.osu.semeestralniukolkunz.utility.IBookFormatter" relationship="TO_ONE">
+      <point x="-116.0" y="-44.0" />
+      <point x="11.5" y="31.5" />
+    </edge>
+    <edge source="com.osu.semeestralniukolkunz.utility.SimpleIBookFormatter" target="com.osu.semeestralniukolkunz.utility.IBookFormatter" relationship="REALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="-14.5" y="780.0" />
+      <point x="70.25" y="780.0" />
+      <point x="-42.75" y="31.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6580366774541532" showDependencies="true" x="546.4139344262295" y="460.1377049180328" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
